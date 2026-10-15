@@ -305,7 +305,7 @@ export function SignInScreen() {
   return (
     <div className="relative h-dvh overflow-hidden">
       <MeshField />
-      <main className="relative z-10 flex h-full min-h-0 flex-col gap-4 overflow-hidden p-4 lg:flex-row lg:gap-6">
+      <main className="relative z-10 flex h-full min-h-0 flex-col gap-4 overflow-hidden p-4 lg:flex-row lg:gap-4">
         <section className="relative flex shrink-0 flex-col px-6 pt-6 sm:px-10 lg:h-full lg:min-w-0 lg:flex-1 lg:px-16 lg:pt-8">
           <a href="/" className="flex w-fit items-center" aria-label="Paysure">
             <span className="flex size-10 shrink-0 items-center justify-center">
@@ -328,7 +328,7 @@ export function SignInScreen() {
           </p>
         </section>
 
-        <section className="relative flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-3xl border border-[#f3f3f3] bg-white px-6 py-6 shadow-[0_0_16px_rgba(118,92,249,0.04)] sm:px-8 lg:h-full lg:w-[calc((100%-1.5rem)*0.47)] lg:max-w-[calc((100%-1.5rem)*0.47)] lg:flex-none lg:py-8">
+        <section className="relative flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-3xl border border-[#f3f3f3] bg-white px-6 py-5 shadow-[0_0_16px_rgba(118,92,249,0.04)] sm:px-8 lg:h-full lg:w-[calc((100%-1rem)*0.47)] lg:max-w-[calc((100%-1rem)*0.47)] lg:flex-none lg:py-6">
           <div className="absolute top-6 right-6 sm:top-8 sm:right-10" ref={languageRef}>
             <button
               type="button"
@@ -378,7 +378,7 @@ export function SignInScreen() {
           </div>
 
           <div className="scrollbar-none flex min-h-0 w-full flex-1 flex-col overflow-y-auto overscroll-contain">
-            <div className="m-auto w-full max-w-[438px] py-8">
+            <div className="m-auto w-full max-w-[438px] py-4">
             <h2 className="text-[32px] font-medium leading-[48px] text-[#251e35]">
               {success || title}
             </h2>
@@ -390,7 +390,7 @@ export function SignInScreen() {
               </p>
             ) : null}
 
-            <form className="mt-8 flex flex-col gap-6" onSubmit={onSubmit} noValidate>
+            <form className="mt-6 flex flex-col gap-5" onSubmit={onSubmit} noValidate>
               {mode !== "code" || !codeSent ? (
                 <div className="flex h-10 gap-10" role="tablist" aria-label={text.welcome}>
                   {(["phone", "email"] as const).map((item) => {

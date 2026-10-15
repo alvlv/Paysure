@@ -54,11 +54,11 @@ export function MeshField() {
         />
       </div>
       <img
-        src="/brand/waves.svg?v=2"
+        src="/brand/waves.svg?v=3"
         alt=""
         width={852}
         height={300}
-        className="absolute bottom-[7%] left-[-6%] w-[min(920px,78vw)] max-w-none select-none"
+        className="absolute bottom-[9%] left-[-8%] h-[clamp(240px,34vh,360px)] w-[min(1320px,96vw)] max-w-none select-none"
       />
     </div>
   );
