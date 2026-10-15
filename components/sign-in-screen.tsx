@@ -350,7 +350,7 @@ export function SignInScreen() {
           </div>
 
           <div className="flex min-h-0 w-full flex-1 flex-col overflow-y-auto overscroll-contain">
-            <div className="m-auto w-full py-8">
+            <div className="m-auto w-full max-w-[438px] py-8">
             <h2 className="text-[28px] font-medium leading-10 text-[#251e35] sm:text-[32px] sm:leading-[48px]">
               {success || title}
             </h2>
@@ -506,7 +506,7 @@ export function SignInScreen() {
             </div>
           </div>
 
-          <p className="mx-auto mt-4 w-full shrink-0 text-center text-sm leading-5 text-[#a49cac] lg:mt-6">
+          <p className="mx-auto mt-4 w-full max-w-[438px] shrink-0 text-center text-sm leading-5 text-[#a49cac] lg:mt-6">
             {text.legalBefore}
             <button
               type="button"
