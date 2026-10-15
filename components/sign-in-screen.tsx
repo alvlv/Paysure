@@ -377,7 +377,7 @@ export function SignInScreen() {
             ) : null}
           </div>
 
-          <div className="flex min-h-0 w-full flex-1 flex-col overflow-y-auto overscroll-contain">
+          <div className="scrollbar-none flex min-h-0 w-full flex-1 flex-col overflow-y-auto overscroll-contain">
             <div className="m-auto w-full max-w-[438px] py-8">
             <h2 className="text-[32px] font-medium leading-[48px] text-[#251e35]">
               {success || title}
