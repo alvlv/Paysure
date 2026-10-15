@@ -305,8 +305,8 @@ export function SignInScreen() {
   return (
     <div className="relative min-h-dvh lg:h-dvh lg:overflow-hidden">
       <MeshField />
-      <main className="relative z-10 flex min-h-dvh flex-col gap-4 p-4 lg:h-full lg:min-h-0 lg:flex-row lg:gap-4 lg:overflow-hidden">
-        <section className="relative flex shrink-0 flex-col px-6 pt-6 sm:px-10 lg:h-full lg:min-w-0 lg:flex-1 lg:px-16 lg:pt-8">
+      <main className="relative z-10 flex min-h-dvh flex-col gap-6 p-4 lg:h-full lg:min-h-0 lg:flex-row lg:gap-4 lg:overflow-hidden">
+        <section className="relative flex min-h-[460px] shrink-0 flex-col px-6 pb-6 pt-8 sm:min-h-[500px] sm:px-10 sm:pb-8 lg:h-full lg:min-h-0 lg:min-w-0 lg:flex-1 lg:px-16 lg:pb-0 lg:pt-8">
           <a href="/" className="flex w-fit items-center" aria-label="Paysure">
             <span className="flex size-10 shrink-0 items-center justify-center">
               <img src="/brand/logo-mark-white.svg" alt="" width={20.6509} height={39.9994} />
@@ -316,14 +316,14 @@ export function SignInScreen() {
             </span>
           </a>
 
-          <div className="mt-6 flex max-w-[564px] flex-col gap-4 lg:mt-[92px] lg:gap-6">
+          <div className="mt-10 flex max-w-[564px] flex-col gap-5 lg:mt-[92px] lg:gap-6">
             <h1 className="text-[32px] font-medium leading-[44px] text-white sm:text-[40px] sm:leading-[52px] lg:text-[48px] lg:leading-[64px]">
               {text.headline}
             </h1>
             <span className="h-1.5 w-10 rounded-full bg-white" />
           </div>
 
-          <p className="mt-6 text-sm leading-5 text-white/70 lg:absolute lg:bottom-8 lg:left-16 lg:mt-0">
+          <p className="mt-auto pt-12 text-sm leading-5 text-white/70 lg:absolute lg:bottom-8 lg:left-16 lg:mt-0 lg:pt-0">
             {text.copyright}
           </p>
         </section>
