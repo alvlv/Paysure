@@ -275,10 +275,10 @@ export function SignInScreen() {
   }
 
   return (
-    <div className="relative min-h-dvh">
+    <div className="relative h-dvh overflow-hidden">
       <MeshField />
-      <main className="relative z-10 grid min-h-dvh gap-4 p-4 lg:grid-cols-2 lg:gap-6">
-        <section className="relative flex min-h-[460px] flex-col px-6 pb-8 pt-8 sm:px-10 lg:min-h-[calc(100dvh-2rem)] lg:px-16 lg:pt-8">
+      <main className="relative z-10 flex h-full min-h-0 flex-col gap-4 overflow-hidden p-4 lg:flex-row lg:gap-6">
+        <section className="relative flex shrink-0 flex-col px-6 pt-6 sm:px-10 lg:h-full lg:min-w-0 lg:flex-1 lg:px-16 lg:pt-8">
           <a href="/" className="flex w-fit items-center" aria-label="Paysure">
             <span className="flex size-10 items-center justify-center">
               <img src="/brand/logo-mark.svg" alt="" width={21} height={40} className="brightness-0 invert" />
@@ -288,19 +288,19 @@ export function SignInScreen() {
             </span>
           </a>
 
-          <div className="mt-16 flex max-w-[564px] flex-col gap-6 lg:mt-[92px]">
+          <div className="mt-6 flex max-w-[564px] flex-col gap-4 lg:mt-[92px] lg:gap-6">
             <h1 className="text-[32px] font-medium leading-[44px] text-white sm:text-[40px] sm:leading-[52px] lg:text-[48px] lg:leading-[64px]">
               {text.headline}
             </h1>
             <span className="h-1.5 w-10 rounded-full bg-white" />
           </div>
 
-          <p className="mt-auto pt-16 text-sm leading-5 text-white/70 lg:absolute lg:bottom-8 lg:left-16 lg:mt-0 lg:pt-0">
+          <p className="mt-6 text-sm leading-5 text-white/70 lg:absolute lg:bottom-8 lg:left-16 lg:mt-0">
             {text.copyright}
           </p>
         </section>
 
-        <section className="relative flex min-h-[calc(100dvh-2rem)] flex-col rounded-3xl border border-[#f3f3f3] bg-white px-6 py-8 shadow-[0_0_16px_rgba(118,92,249,0.04)] sm:px-8 lg:px-8 lg:py-[72px]">
+        <section className="relative flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-3xl border border-[#f3f3f3] bg-white px-6 py-6 shadow-[0_0_16px_rgba(118,92,249,0.04)] sm:px-8 lg:h-full lg:w-[460px] lg:flex-none lg:py-8">
           <div className="absolute top-6 right-6 sm:top-8 sm:right-10" ref={languageRef}>
             <button
               type="button"
@@ -349,7 +349,8 @@ export function SignInScreen() {
             ) : null}
           </div>
 
-          <div className="mx-auto flex w-full max-w-[438px] flex-1 flex-col justify-center pt-10">
+          <div className="flex min-h-0 w-full flex-1 flex-col overflow-y-auto overscroll-contain">
+            <div className="m-auto w-full max-w-[380px] py-8">
             <h2 className="text-[28px] font-medium leading-10 text-[#251e35] sm:text-[32px] sm:leading-[48px]">
               {success || title}
             </h2>
@@ -502,9 +503,10 @@ export function SignInScreen() {
                 </p>
               ) : null}
             </form>
+            </div>
           </div>
 
-          <p className="mx-auto mt-8 max-w-[438px] text-center text-sm leading-5 text-[#a49cac]">
+          <p className="mx-auto mt-4 w-full max-w-[380px] shrink-0 text-center text-sm leading-5 text-[#a49cac] lg:mt-6">
             {text.legalBefore}
             <button
               type="button"

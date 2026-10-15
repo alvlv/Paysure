@@ -125,7 +125,8 @@
     @apply bg-[#6840e0] text-white;
   }
   html {
-    @apply font-sans;
+    @apply h-dvh overflow-hidden font-sans;
+    overscroll-behavior: none;
   }
 }
 
