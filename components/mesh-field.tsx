@@ -22,31 +22,32 @@ export function MeshField() {
   }, []);
 
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden bg-[#5c35d6]" aria-hidden>
+    <div className="pointer-events-none absolute inset-0 overflow-hidden bg-[#6840e0]" aria-hidden>
       <div className="mesh-enter absolute inset-0 origin-center animate-[mesh-in_1.15s_cubic-bezier(0.22,1,0.36,1)_both]">
         <MeshGradient
           className="absolute inset-0 h-full w-full"
-          colors={["#4a2bc0", "#6a45e8", "#9670ff", "#c9b6ff", "#5c35d6"]}
+          colors={["#4528c0", "#6840e0", "#9670ff", "#c4b0ff", "#5530d0"]}
           speed={1.5 * play}
           distortion={0.95}
           swirl={0.8}
           grainMixer={0}
           grainOverlay={0}
           fit="cover"
-          scale={1.15}
+          scale={0.85}
           minPixelRatio={1}
           maxPixelCount={921600}
         />
         <MeshGradient
           className="absolute inset-0 h-full w-full opacity-60"
-          colors={["#5c35d6", "#9670ff", "#ddd2ff", "#7c5cff"]}
+          colors={["#5c35d6", "#9670ff", "#d4c6ff", "#7a56ee"]}
           speed={1.2 * play}
           distortion={0.7}
           swirl={0.55}
           grainMixer={0}
           grainOverlay={0}
           fit="cover"
-          scale={1.25}
+          scale={0.75}
+          offsetX={-0.12}
           offsetY={0.08}
           minPixelRatio={1}
           maxPixelCount={921600}
