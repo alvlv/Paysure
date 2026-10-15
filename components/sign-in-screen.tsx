@@ -281,21 +281,21 @@ export function SignInScreen() {
         <section className="relative flex min-h-[460px] flex-col px-6 pb-8 pt-8 sm:px-10 lg:min-h-[calc(100dvh-2rem)] lg:px-16 lg:pt-8">
           <a href="/" className="flex w-fit items-center" aria-label="Paysure">
             <span className="flex size-10 items-center justify-center">
-              <img src="/brand/logo-mark.svg" alt="" width={21} height={40} />
+              <img src="/brand/logo-mark.svg" alt="" width={21} height={40} className="brightness-0 invert" />
             </span>
             <span className="flex h-10 items-center pt-[7px]">
-              <img src="/brand/wordmark.svg" alt="" width={108} height={25} />
+              <img src="/brand/wordmark.svg" alt="" width={108} height={25} className="brightness-0 invert" />
             </span>
           </a>
 
           <div className="mt-16 flex max-w-[564px] flex-col gap-6 lg:mt-[92px]">
-            <h1 className="text-[32px] font-medium leading-[44px] text-[#251e35] sm:text-[40px] sm:leading-[52px] lg:text-[48px] lg:leading-[64px]">
+            <h1 className="text-[32px] font-medium leading-[44px] text-white sm:text-[40px] sm:leading-[52px] lg:text-[48px] lg:leading-[64px]">
               {text.headline}
             </h1>
-            <span className="h-1.5 w-10 rounded-full bg-[#9670ff]" />
+            <span className="h-1.5 w-10 rounded-full bg-white" />
           </div>
 
-          <p className="mt-auto pt-16 text-sm leading-5 text-[#a49cac] lg:absolute lg:bottom-8 lg:left-16 lg:mt-0 lg:pt-0">
+          <p className="mt-auto pt-16 text-sm leading-5 text-white/70 lg:absolute lg:bottom-8 lg:left-16 lg:mt-0 lg:pt-0">
             {text.copyright}
           </p>
         </section>

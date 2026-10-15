@@ -7,7 +7,8 @@ import { useEffect, useState } from "react";
  * y.uno's first screen stacks two Paper Shaders MeshGradients on a flat
  * field. The back layer is faster and more distorted; the front layer is
  * slower, swirls less, and sits at 60% opacity. Reduced motion freezes both.
- * Colors here are Paysure lilac so the sign-in type stays readable.
+ * Stops stay in the #9670FF family: deeper violets for the field,
+ * the theme color and lighter lilacs for the bright ribbons.
  */
 export function MeshField() {
   const [play, setPlay] = useState(1);
@@ -21,11 +22,11 @@ export function MeshField() {
   }, []);
 
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden bg-[#f4efff]" aria-hidden>
+    <div className="pointer-events-none absolute inset-0 overflow-hidden bg-[#5c35d6]" aria-hidden>
       <div className="mesh-enter absolute inset-0 origin-center animate-[mesh-in_1.15s_cubic-bezier(0.22,1,0.36,1)_both]">
         <MeshGradient
           className="absolute inset-0 h-full w-full"
-          colors={["#f6f1ff", "#d9c8ff", "#9670ff", "#cbb6ff", "#efe7ff"]}
+          colors={["#4a2bc0", "#6a45e8", "#9670ff", "#c9b6ff", "#5c35d6"]}
           speed={1.5 * play}
           distortion={0.95}
           swirl={0.8}
@@ -38,7 +39,7 @@ export function MeshField() {
         />
         <MeshGradient
           className="absolute inset-0 h-full w-full opacity-60"
-          colors={["#f4efff", "#c4a6ff", "#b794ff", "#9670ff"]}
+          colors={["#5c35d6", "#9670ff", "#ddd2ff", "#7c5cff"]}
           speed={1.2 * play}
           distortion={0.7}
           swirl={0.55}
@@ -50,7 +51,6 @@ export function MeshField() {
           minPixelRatio={1}
           maxPixelCount={921600}
         />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_18%_22%,rgba(244,239,255,0.78),transparent_58%)]" />
       </div>
       <img
         src="/brand/waves.svg"
