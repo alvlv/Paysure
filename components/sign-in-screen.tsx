@@ -280,11 +280,11 @@ export function SignInScreen() {
       <main className="relative z-10 flex h-full min-h-0 flex-col gap-4 overflow-hidden p-4 lg:flex-row lg:gap-6">
         <section className="relative flex shrink-0 flex-col px-6 pt-6 sm:px-10 lg:h-full lg:min-w-0 lg:flex-1 lg:px-16 lg:pt-8">
           <a href="/" className="flex w-fit items-center" aria-label="Paysure">
-            <span className="flex size-10 items-center justify-center">
-              <img src="/brand/logo-mark.svg" alt="" width={21} height={40} className="brightness-0 invert" />
+            <span className="flex size-10 shrink-0 items-center justify-center">
+              <img src="/brand/logo-mark-white.svg" alt="" width={20.6509} height={39.9994} />
             </span>
-            <span className="flex h-10 items-center pt-[7px]">
-              <img src="/brand/wordmark.svg" alt="" width={108} height={25} className="brightness-0 invert" />
+            <span className="flex h-10 w-[110px] shrink-0 items-center justify-center self-stretch pt-[7px]">
+              <img src="/brand/wordmark-white.svg" alt="" width={107.75} height={25.25} />
             </span>
           </a>
 
