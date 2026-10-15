@@ -305,8 +305,8 @@ export function SignInScreen() {
   return (
     <div className="relative min-h-dvh lg:h-dvh lg:overflow-hidden">
       <MeshField />
-      <main className="relative z-10 flex min-h-dvh flex-col gap-6 p-4 lg:h-full lg:min-h-0 lg:flex-row lg:gap-4 lg:overflow-hidden">
-        <section className="relative flex min-h-[460px] shrink-0 flex-col px-6 pb-6 pt-8 sm:min-h-[500px] sm:px-10 sm:pb-8 lg:h-full lg:min-h-0 lg:min-w-0 lg:flex-1 lg:px-16 lg:pb-0 lg:pt-8">
+      <main className="relative z-10 flex min-h-dvh flex-col gap-0 p-4 lg:h-full lg:min-h-0 lg:flex-row lg:gap-4 lg:overflow-hidden">
+        <section className="relative z-0 flex min-h-[460px] shrink-0 flex-col px-6 pt-8 sm:min-h-[500px] sm:px-10 lg:h-full lg:min-h-0 lg:min-w-0 lg:flex-1 lg:px-16 lg:pb-0 lg:pt-8">
           <a href="/" className="flex w-fit items-center" aria-label="Paysure">
             <span className="flex size-10 shrink-0 items-center justify-center">
               <img src="/brand/logo-mark-white.svg" alt="" width={20.6509} height={39.9994} />
@@ -323,22 +323,22 @@ export function SignInScreen() {
             <span className="h-1.5 w-10 rounded-full bg-white" />
           </div>
 
-          <div className="relative left-1/2 mt-2 min-h-[148px] w-screen max-w-none -translate-x-1/2 flex-1 overflow-hidden lg:hidden" aria-hidden>
+          <div className="relative left-1/2 mt-2 min-h-[156px] w-screen max-w-none -translate-x-1/2 flex-1 lg:hidden" aria-hidden>
             <img
-              src="/brand/waves.svg?v=5"
+              src="/brand/waves.svg?v=6"
               alt=""
               width={980}
               height={300}
-              className="pointer-events-none absolute top-0 left-[-2%] h-full w-[104%] max-w-none select-none"
+              className="pointer-events-none absolute top-6 left-[-2%] h-[calc(100%+5rem)] w-[104%] max-w-none select-none"
             />
           </div>
 
-          <p className="mt-auto pt-4 text-sm leading-5 text-white/70 lg:absolute lg:bottom-8 lg:left-16 lg:mt-0 lg:pt-0">
+          <p className="pointer-events-none absolute bottom-[4.5rem] left-6 z-30 text-sm leading-5 text-white/70 sm:left-10 lg:bottom-8 lg:left-16 lg:z-auto">
             {text.copyright}
           </p>
         </section>
 
-        <section className="relative flex w-full flex-col rounded-3xl border border-[#f3f3f3] bg-white px-6 py-5 shadow-[0_0_16px_rgba(118,92,249,0.04)] sm:px-8 lg:h-full lg:min-h-0 lg:w-[calc((100%-1rem)*0.47)] lg:max-w-[calc((100%-1rem)*0.47)] lg:flex-none lg:overflow-hidden lg:py-6">
+        <section className="relative z-20 -mt-12 flex w-full flex-col rounded-3xl border border-[#f3f3f3] bg-white px-6 py-5 shadow-[0_0_16px_rgba(118,92,249,0.04)] sm:px-8 lg:z-auto lg:mt-0 lg:h-full lg:min-h-0 lg:w-[calc((100%-1rem)*0.47)] lg:max-w-[calc((100%-1rem)*0.47)] lg:flex-none lg:overflow-hidden lg:py-6">
           <div className="absolute top-6 right-6 sm:top-8 sm:right-10" ref={languageRef}>
             <button
               type="button"
