@@ -323,7 +323,17 @@ export function SignInScreen() {
             <span className="h-1.5 w-10 rounded-full bg-white" />
           </div>
 
-          <p className="mt-auto pt-12 text-sm leading-5 text-white/70 lg:absolute lg:bottom-8 lg:left-16 lg:mt-0 lg:pt-0">
+          <div className="relative mt-2 min-h-[148px] flex-1 overflow-hidden lg:hidden" aria-hidden>
+            <img
+              src="/brand/waves.svg?v=3"
+              alt=""
+              width={852}
+              height={300}
+              className="pointer-events-none absolute top-[-14%] left-[-22%] h-[112%] w-[156%] max-w-none select-none"
+            />
+          </div>
+
+          <p className="mt-auto pt-4 text-sm leading-5 text-white/70 lg:absolute lg:bottom-8 lg:left-16 lg:mt-0 lg:pt-0">
             {text.copyright}
           </p>
         </section>

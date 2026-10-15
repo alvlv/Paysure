@@ -58,7 +58,7 @@ export function MeshField() {
         alt=""
         width={852}
         height={300}
-        className="absolute bottom-[9%] left-[-8%] h-[clamp(240px,34vh,360px)] w-[min(1320px,96vw)] max-w-none select-none"
+        className="absolute bottom-[9%] left-[-8%] hidden h-[clamp(240px,34vh,360px)] w-[min(1320px,96vw)] max-w-none select-none lg:block"
       />
     </div>
   );
