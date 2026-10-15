@@ -303,9 +303,9 @@ export function SignInScreen() {
   }
 
   return (
-    <div className="relative h-dvh overflow-hidden">
+    <div className="relative min-h-dvh lg:h-dvh lg:overflow-hidden">
       <MeshField />
-      <main className="relative z-10 flex h-full min-h-0 flex-col gap-4 overflow-hidden p-4 lg:flex-row lg:gap-4">
+      <main className="relative z-10 flex min-h-dvh flex-col gap-4 p-4 lg:h-full lg:min-h-0 lg:flex-row lg:gap-4 lg:overflow-hidden">
         <section className="relative flex shrink-0 flex-col px-6 pt-6 sm:px-10 lg:h-full lg:min-w-0 lg:flex-1 lg:px-16 lg:pt-8">
           <a href="/" className="flex w-fit items-center" aria-label="Paysure">
             <span className="flex size-10 shrink-0 items-center justify-center">
@@ -328,7 +328,7 @@ export function SignInScreen() {
           </p>
         </section>
 
-        <section className="relative flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-3xl border border-[#f3f3f3] bg-white px-6 py-5 shadow-[0_0_16px_rgba(118,92,249,0.04)] sm:px-8 lg:h-full lg:w-[calc((100%-1rem)*0.47)] lg:max-w-[calc((100%-1rem)*0.47)] lg:flex-none lg:py-6">
+        <section className="relative flex w-full flex-col rounded-3xl border border-[#f3f3f3] bg-white px-6 py-5 shadow-[0_0_16px_rgba(118,92,249,0.04)] sm:px-8 lg:h-full lg:min-h-0 lg:w-[calc((100%-1rem)*0.47)] lg:max-w-[calc((100%-1rem)*0.47)] lg:flex-none lg:overflow-hidden lg:py-6">
           <div className="absolute top-6 right-6 sm:top-8 sm:right-10" ref={languageRef}>
             <button
               type="button"
@@ -377,7 +377,7 @@ export function SignInScreen() {
             ) : null}
           </div>
 
-          <div className="scrollbar-none flex min-h-0 w-full flex-1 flex-col overflow-y-auto overscroll-contain">
+          <div className="scrollbar-none flex w-full flex-col lg:min-h-0 lg:flex-1 lg:overflow-y-auto lg:overscroll-contain">
             <div className="m-auto w-full max-w-[438px] py-4">
             <h2 className="text-[32px] font-medium leading-[48px] text-[#251e35]">
               {success || title}

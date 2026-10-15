@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${lexend.variable} h-dvh overflow-hidden antialiased`}>
-      <body className="h-full overflow-hidden">{children}</body>
+    <html lang="en" className={`${lexend.variable} min-h-dvh overflow-x-hidden antialiased lg:h-dvh lg:overflow-hidden`}>
+      <body className="min-h-dvh lg:h-full lg:overflow-hidden">{children}</body>
     </html>
   );
 }
