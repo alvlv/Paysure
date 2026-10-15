@@ -300,7 +300,7 @@ export function SignInScreen() {
           </p>
         </section>
 
-        <section className="relative flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-3xl border border-[#f3f3f3] bg-white px-6 py-6 shadow-[0_0_16px_rgba(118,92,249,0.04)] sm:px-8 lg:h-full lg:w-[460px] lg:flex-none lg:py-8">
+        <section className="relative flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-3xl border border-[#f3f3f3] bg-white px-6 py-6 shadow-[0_0_16px_rgba(118,92,249,0.04)] sm:px-8 lg:h-full lg:w-[calc((100%-1.5rem)*0.47)] lg:max-w-[calc((100%-1.5rem)*0.47)] lg:flex-none lg:py-8">
           <div className="absolute top-6 right-6 sm:top-8 sm:right-10" ref={languageRef}>
             <button
               type="button"
@@ -350,7 +350,7 @@ export function SignInScreen() {
           </div>
 
           <div className="flex min-h-0 w-full flex-1 flex-col overflow-y-auto overscroll-contain">
-            <div className="m-auto w-full max-w-[380px] py-8">
+            <div className="m-auto w-full py-8">
             <h2 className="text-[28px] font-medium leading-10 text-[#251e35] sm:text-[32px] sm:leading-[48px]">
               {success || title}
             </h2>
@@ -506,7 +506,7 @@ export function SignInScreen() {
             </div>
           </div>
 
-          <p className="mx-auto mt-4 w-full max-w-[380px] shrink-0 text-center text-sm leading-5 text-[#a49cac] lg:mt-6">
+          <p className="mx-auto mt-4 w-full shrink-0 text-center text-sm leading-5 text-[#a49cac] lg:mt-6">
             {text.legalBefore}
             <button
               type="button"
