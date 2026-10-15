@@ -325,7 +325,7 @@ export function SignInScreen() {
 
           <div className="relative left-1/2 mt-2 min-h-[148px] w-screen max-w-none -translate-x-1/2 flex-1 overflow-hidden lg:hidden" aria-hidden>
             <img
-              src="/brand/waves.svg?v=3"
+              src="/brand/waves.svg?v=4"
               alt=""
               width={852}
               height={300}

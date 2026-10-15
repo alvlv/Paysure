@@ -54,7 +54,7 @@ export function MeshField() {
         />
       </div>
       <img
-        src="/brand/waves.svg?v=3"
+        src="/brand/waves.svg?v=4"
         alt=""
         width={852}
         height={300}
