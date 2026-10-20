@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/lexend-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/lexend-500.woff2") format("woff2");
+}
+
+:root {
+  --font-lexend: "Lexend", "PingFang SC", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+}

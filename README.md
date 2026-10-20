@@ -11,6 +11,14 @@ npm run dev
 
 Open the URL printed by Next.js.
 
+## Static file
+
+`dist/paysure-signin.html` is the same sign-in screen in one file. Send that file to someone and they can open it in a browser. No server is required. Rebuild it with:
+
+```bash
+npm run static
+```
+
 ## Background
 
 Yuno paints its first screen with [Paper Shaders](https://github.com/paper-design/shaders) `MeshGradient`:
